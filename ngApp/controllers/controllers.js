@@ -11,6 +11,29 @@ export class AboutController {
 
 export class ResumeController {
   constructor() {
-    this.message = 'Resume';
+    this.message = 'resume page';
+  }
+}
+
+export class ActivitiesController {
+  constructor() {
+    this.message = 'activities page';
+  }
+}
+
+export class BlogController {
+  constructor() {
+    this.message = 'blog page';
+  }
+}
+export class PageazController {
+  constructor() {
+    this.message = 'Page Blog Post';
+  }
+}
+
+export class TodoController {
+  constructor() {
+    this.message = 'Todo List';
   }
 }

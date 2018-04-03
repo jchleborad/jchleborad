@@ -96,6 +96,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _angular2.default.module('myApp', [_angularUiRouter2.default, _angularResource2.default, _angularBootstrapNpm2.default]).config(routing);
 
 routing.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
+
 function routing($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider.state("home", {
     url: "/",
@@ -111,6 +112,26 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
     url: "/resume",
     templateUrl: "/ngApp/views/resume.html",
     controller: _controllers.ResumeController,
+    controllerAs: "controller"
+  }).state("activities", {
+    url: "/activities",
+    templateUrl: "/ngApp/views/activities.html",
+    controller: _controllers.ActivitiesController,
+    controllerAs: "controller"
+  }).state("blog", {
+    url: "/blog",
+    templateUrl: "/ngApp/views/blog.html",
+    controller: _controllers.BlogController,
+    controllerAs: "controller"
+  }).state("pageaz", {
+    url: "/pageaz",
+    templateUrl: "/ngApp/views/blog_posts/pageaz-032018.html",
+    controller: _controllers.PageazController,
+    controllerAs: "controller"
+  }).state("todo", {
+    url: "/todo",
+    templateUrl: "/ngApp/views/todo.html",
+    controller: _controllers.TodoController,
     controllerAs: "controller"
   }).state("notFound", {
     url: "/notFound",
@@ -48511,7 +48532,31 @@ var AboutController = exports.AboutController = function AboutController() {
 var ResumeController = exports.ResumeController = function ResumeController() {
   _classCallCheck(this, ResumeController);
 
-  this.message = 'Resume';
+  this.message = 'resume page';
+};
+
+var ActivitiesController = exports.ActivitiesController = function ActivitiesController() {
+  _classCallCheck(this, ActivitiesController);
+
+  this.message = 'activities page';
+};
+
+var BlogController = exports.BlogController = function BlogController() {
+  _classCallCheck(this, BlogController);
+
+  this.message = 'blog page';
+};
+
+var PageazController = exports.PageazController = function PageazController() {
+  _classCallCheck(this, PageazController);
+
+  this.message = 'Page Blog Post';
+};
+
+var TodoController = exports.TodoController = function TodoController() {
+  _classCallCheck(this, TodoController);
+
+  this.message = 'Todo List';
 };
 
 /***/ }),
