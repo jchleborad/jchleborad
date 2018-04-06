@@ -187,12 +187,11 @@ hr.light-100 {
 .fa-instagram:hover,
 .fa-twitter:hover,
 .fa-strava:hover {
-    color: #c8c487;
+    color: darkgray;
 }
 
 .fa-moose:hover {
-    background-color: #c8c487;
-    border-radius: 20px;
+    opacity: .31;
 }
 
 /* resume.html */
@@ -283,6 +282,18 @@ resume div {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* about.html */
+
+.about-img {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*---Media Queries --*/
