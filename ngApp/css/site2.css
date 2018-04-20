@@ -10,14 +10,7 @@ body {
     font-family: 'Comfortaa', sans-serif;
     color: #222;
     background-color: #f5f5f5;
-    padding-top: 35px;
 }
-
-img {
-    image-orientation: from-image;
-}
-
-/* Navbar & Footer*/
 
 .navbar {
     padding: .8rem;
@@ -53,31 +46,7 @@ footer h5 {
     margin-top: .5em;
 }
 
-footer div h5 {
-    font-size: .8rem;
-}
-
-footer div p {
-    font-size: .6rem;
-}
-
 /* home.html */
-
-.hr-quote-top {
-    width: 50%;
-    margin-top: 0%;
-    margin-bottom: .5rem;
-    height: 2px;
-    border-color: darkgray;
-}
-
-.hr-quote-bottom {
-    width: 50%;
-    margin-top: .5rem;
-    margin-bottom: 0%;
-    height: 2px;
-    border-color: darkgray;
-}
 
 .carousel-inner img {
     width: 97%;
@@ -119,82 +88,6 @@ footer div p {
     margin-bottom: 1rem;
 }
 
-.space {
-    background-color: gray;
-    margin-bottom: 2px;
-    text-align: center;
-}
-
-.img-header {
-    width: 100%;
-    height: 95%;
-    border-radius: 3px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
-}
-
-/* SOCIAL MEDIA STYLES */
-
-.fa-facebook-f {
-    color: #3b5998;
-}
-
-.fa-linkedin-in {
-    color: #0077b5;
-}
-
-.fa-instagram {
-    color: #517fa4;
-}
-
-.fa-twitter {
-    color: #00aced;
-}
-
-.fa-strava {
-    color: #fc4c02;
-}
-
-.fa-facebook-f,
-.fa-linkedin-in,
-.fa-instagram,
-.fa-twitter,
-.fa-strava,
-.fa-jicon:hover {
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
-}
-
-.fa-facebook-f:hover,
-.fa-linkedin-in:hover,
-.fa-instagram:hover,
-.fa-twitter:hover,
-.fa-strava:hover,
-.fa-jicon:hover {
-    opacity: .5;
-}
-
-.sm-cardheader {
-    font-size: .8rem;
-}
-
-.pointer:hover {
-    cursor: pointer;
-    opacity: .5;
-    font-size: 1rem;
-}
-
-@media screen and (orientation: portrait) {
-    img.img-header {
-        max-width: 90%;
-    }
-}
-
-@media screen and (orientation: landscape) {
-    img.img-header {
-        max-height: 90%;
-    }
-}
-
 /* Fonts, Buttons & Other Elements */
 
 .btn-primary {
@@ -227,7 +120,7 @@ footer div p {
 }
 
 .social a {
-    font-size: 2.5em;
+    font-size: 4.5em;
     padding: 3rem;
     text-decoration: none;
 }
@@ -269,6 +162,96 @@ hr.light-100 {
     color: black;
 }
 
+.fa-facebook-f {
+    color: #3b5998;
+}
+
+.fa-linkedin-in {
+    color: #0077b5;
+}
+
+.fa-instagram {
+    color: #517fa4;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-strava {
+    color: #fc4c02;
+}
+
+.fa-facebook-f:hover,
+.fa-linkedin-in:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-strava:hover {
+    color: darkgray;
+}
+
+.fa-moose:hover {
+    opacity: .31;
+}
+
+/* resume.html */
+
+.resume-padding {
+    padding-left: 5rem;
+}
+
+.resume-hr-top {
+    margin-top: 0%;
+    margin-bottom: .5rem;
+}
+
+.resume-hr-bottom {
+    margin-top: .5rem;
+    margin-bottom: 0%;
+}
+
+resume div {
+    padding: 0%;
+}
+
+.resume-left {
+    display: inline-block;
+}
+
+.resume-right {
+    /* display: inline-block;
+    float: right; */
+    padding-right: 5rem;
+}
+
+.resume-date-right {
+    display: inline-block;
+    float: right;
+    padding-right: 5rem;
+}
+
+.resume-justify {
+    padding-left: 2rem;
+    padding-right: 5rem;
+    text-align: justify;
+}
+
+.resume-justify-ul {
+    padding-left: 4rem;
+    padding-right: 5rem;
+    text-align: justify;
+}
+
+.resume-link a {
+    color: darkslategray;
+}
+
+.resume-link a:hover {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* activities.html */
 
 .activities-container {
@@ -287,52 +270,30 @@ hr.light-100 {
 
 /* Blog Posts */
 
+.blog-hr {
+    border: 0;
+    width: 80%;
+    color: darkgrey;
+    background-color: darkgray;
+    height: .1rem;
+}
+
 .center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-input::placeholder {
-    color: lightgray;
-    font-size: .8rem;
-}
+/* about.html */
 
-img.wrap {
-    float: right;
-}
-
-/* Paragraph Fade */
-
-section {
-    position: relative;
-}
-
-section::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 6rem;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-}
-
-/* .Paragraph Fade */
-
-/* .Blog Posts */
-
-div.blog-quote {
-    margin-top: 10.6rem;
-}
-
-.img-pot {
-    border: solid 1px #ccc;
-    box-shadow: 1px 1px 5px #999;
-    padding: 25px;
+.about-img {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*---Media Queries --*/
@@ -342,19 +303,16 @@ div.blog-quote {
         font-size: 4em;
         padding: 2rem;
     }
-    div.blog-quote {
-        margin-top: 1rem;
-    }
 }
 
 @media (max-width: 768px) {
     .carousel-caption {
         top: 45%;
     }
-    .carousel-caption h3 {
-        font-size: 100%;
+    .carousel-caption h1 {
+        font-size: 350%;
     }
-    .carousel-caption h5 {
+    .carousel-caption h3 {
         font-size: 140%;
         font-weight: 400;
         padding-bottom: .2rem;
@@ -462,13 +420,4 @@ Large (lg) devices (desktops, 992px and up)
 
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
-*/
-
-/* FONT SIZES HEADINGS TO REM
-H1 = 2.5rem
-H2 = 2.00rem
-H3 = 1.75rem
-H4 = 1.50rem
-H5 = 1.25rem
-H6 = 1.00rem
 */
