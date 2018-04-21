@@ -348,7 +348,8 @@ hr.light-100 {
     margin: 1rem;
 }
 
-.fa-cloud-download-alt {
+.fa-cloud-download-alt,
+.fa-eye {
     color: black;
 }
 
