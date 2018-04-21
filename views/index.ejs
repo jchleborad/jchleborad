@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="myApp" lang="en">
+<!-- <html ng-app="myApp" lang="en"> -->
+<html lang="en">
 
 <head>
   <title>JChleborad</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="/" />
+  <!-- <base href="/" /> -->
 
   <!-- Bootstrap 4, CSS3 & Scripts-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -42,10 +43,10 @@
               <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/resume">Resume</a>
+              <a class="nav-link" href="/ngApp//views/resume.html">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/activities">Activities</a>
+              <a class="nav-link" href="/ngApp/views/activities.html">Activities</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/blog">Travel Blog</a>
@@ -60,11 +61,28 @@
   </header>
 
   <!-- ANGULAR SPA VIEWS -->
-  <ui-view></ui-view>
+  <!-- <ui-view></ui-view> -->
   <!-- ./ANGULAR SPA VIEWS -->
 
+  <section class="masthead">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="brand-heading">John Chleborad</h1>
+            <p class="intro-text">Whatever you are, be a good one
+              <br> – Abraham Lincoln</p>
+            <a href="#bottom" class="btn btn-circle js-scroll-trigger" style="color: whitesmoke">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--- Footer -->
-  <footer class="bg-dark" style="padding-top: 0px">
+  <footer id="bottom" class="bg-dark" style="padding-top: 0px">
     <div class="container-fluid">
       <div class="row text-center">
         <div class="col-md-8" style="padding-top: 2px; padding-bottom: 0px">
@@ -118,47 +136,6 @@
       </div>
     </div>
     <hr class="light-100">
-
-    <!-- <div class="container-fluid padding">
-      <div class="row text-center">
-        <div class="col-md-4">
-          <img class="logo" src="/ngApp/images/chleb-c-logo.png" width="38">
-          <hr class="light">
-          <p>John Chleborad</p>
-          <p>
-            <a href="tel:+16236965646">(623) 696-5646</a>
-          </p>
-          <p>
-            <a href="mailto:jchleborad@gmail.com">JChleborad@gmail.com</a>
-          </p>
-          <p>
-            <a href="https://www.google.com/maps/place/Peoria,+AZ/@33.7529228,-112.4651413,11z/data=!3m1!4b1!4m5!3m4!1s0x872b5ae6de3cc901:0xd3dfa520c130189d!8m2!3d33.5805955!4d-112.2373779"
-              target="_blank">Peoria, Arizona</a>
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h5>Our Hours</h5>
-          <hr class="light">
-          <p>Monday - Friday: 9am - 5pm</p>
-          <p>Saturday: 10am - 4pm</p>
-          <p>Sunday: Closed</p>
-        </div>
-        <div class="col-md-4">
-          <h5 style="margin-top:.5em">Service Area</h5>
-          <hr class="light">
-          <p>City, State, 00000</p>
-          <p>City, State, 00000</p>
-          <p>City, State, 00000</p>
-          <p>City, State, 00000</p>
-        </div>
-        <div class="col-12">
-          <hr class="light-100">
-          <span style="font-size: 1em">&copy; MMXVIII - R John Chleborad, all rights reserved</span>
-          <br>
-          <span style="font-size: .75em">jchleborad.com</span>
-        </div>
-      </div>
-    </div> -->
   </footer>
 
   <!-- App Init -->

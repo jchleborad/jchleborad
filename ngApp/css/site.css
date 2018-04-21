@@ -13,6 +13,31 @@ body {
     padding-top: 35px;
 }
 
+.masthead {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 200px 0;
+    text-align: center;
+    color: white;
+    background: url('/ngApp/images/intro-bg.jpg') no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 50px;
+        }
+        .intro-text {
+            font-size: 18px;
+        }
+    }
+}
+
 img {
     image-orientation: from-image;
 }
@@ -130,6 +155,64 @@ footer div p {
     height: 95%;
     border-radius: 3px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* resume.html */
+
+.resume-padding {
+    padding-left: 5rem;
+}
+
+.resume-hr-top {
+    margin-top: 0%;
+    margin-bottom: .5rem;
+}
+
+.resume-hr-bottom {
+    margin-top: .5rem;
+    margin-bottom: 0%;
+}
+
+resume div {
+    padding: 0%;
+}
+
+.resume-left {
+    display: inline-block;
+}
+
+.resume-right {
+    /* display: inline-block;
+    float: right; */
+    padding-right: 5rem;
+}
+
+.resume-date-right {
+    display: inline-block;
+    float: right;
+    padding-right: 5rem;
+}
+
+.resume-justify {
+    padding-left: 2rem;
+    padding-right: 5rem;
+    text-align: justify;
+}
+
+.resume-justify-ul {
+    padding-left: 4rem;
+    padding-right: 5rem;
+    text-align: justify;
+}
+
+.resume-link a {
+    color: darkslategray;
+}
+
+.resume-link a:hover {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* SOCIAL MEDIA STYLES */
