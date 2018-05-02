@@ -20,7 +20,32 @@ body {
     padding: 200px 0;
     text-align: center;
     color: white;
-    background: url('/ngApp/images/intro-bg.jpg') no-repeat bottom center scroll;
+    background: url('/ngApp/images/bw-coastline.jpg') no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 50px;
+        }
+        .intro-text {
+            font-size: 18px;
+        }
+    }
+}
+
+.mastheadquote {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+    background: url('/ngApp/images/bits-and-bytes.png') no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -159,6 +184,11 @@ footer div p {
 
 /* resume.html */
 
+.profile-pic {
+    border: .5rem;
+    border-color: red;
+    border-radius: .25rem;
+}
 .resume-padding {
     padding-left: 5rem;
 }
@@ -237,11 +267,16 @@ resume div {
     color: #fc4c02;
 }
 
+.fa-github {
+    color: black;
+}
+
 .fa-facebook-f,
 .fa-linkedin-in,
 .fa-instagram,
 .fa-twitter,
 .fa-strava,
+.fa-github,
 .fa-jicon:hover {
     font-size: 1.5rem;
     margin-bottom: .5rem;
@@ -252,6 +287,7 @@ resume div {
 .fa-instagram:hover,
 .fa-twitter:hover,
 .fa-strava:hover,
+.fa-github:hover,
 .fa-jicon:hover {
     opacity: .5;
 }
