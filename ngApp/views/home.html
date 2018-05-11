@@ -1,242 +1,136 @@
-<!-- MAIN ANGULAR SPA -->
-<!--- Image Slider (Bootstrap) -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-    </ul>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="/ngApp/images/background.png">
-            <div class="carousel-caption">
-                <h1>Bootstrap</h1>
-                <h3>Complete Website Layout</h3>
-                <button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
-                <button type="button" class="btn btn-primary btn-lg">Get Started</button>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="/ngApp/images/background2.png">
-        </div>
-        <div class="carousel-item">
-            <img src="/ngApp/images/background3.png">
-        </div>
-    </div>
-</div>
+<!-- FROM GIT Hosted Version, Index.html -->
+<!DOCTYPE html>
+<body>
 
-<!--- Jumbotron (Web Hosting) -->
-<div class="container-fluid">
-    <div class="row jumbotron">
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-            <p class="lead">A web hosting service allows individuals and orgnaizations to make thier website accessible via the World Wide
-                Web.
-            </p>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-            <a href="#">
-                <button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button>
-            </a>
-        </div>
-    </div>
-</div>
-
-<!--- Welcome Section (Built with Ease) -->
-<div class="container-fluid padding">
-    <div class="row welcome text-center">
-        <div class="col-12">
-            <h1 class="display-4">Built with ease.</h1>
-        </div>
-        <hr>
-        <div class="col-12">
-            <p class="lead">Welcome to my Bootstrap 4 website tutorial! Bootstrap is a freee and open-source front-end library with HTML
-                and CSS based designs.</p>
-        </div>
-    </div>
-</div>
-
-<!--- Three Column Section (Code Logos) -->
-<div class="container-fluid padding">
-    <div class="row text-center padding">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-code"></i>
-            <h3>HTML5</h3>
-            <p>Built with the latest version of HTML, HTML5.</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-bold"></i>
-            <h3>BOOTSTRAP</h3>
-            <p>Built with the latest version of Bootstrap, Bootstrap 4.</p>
-        </div>
-        <div class="col-xs-12 col-md-4">
-            <i class="fab fa-css3"></i>
-            <h3>CSS3</h3>
-            <p>Built with the latest version of CSS, CSS3.</p>
-        </div>
-    </div>
-    <hr class="my-4">
-</div>
-
-<!--- Two Column Section (If you build it) -->
-<div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-lg-6">
-            <h2>If you build it...</h2>
-            <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
-            <p>Resize the browser window to see the effect. Responsive web design has become more important as the amount of
-                mobile traffic now accounts for more than half of total internet traffic.</p>
-            <p>It can also display the web page differently depending on the screen size or viewing device.</p>
-            <br>
-            <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-        <div class="col-lg-6">
-            <img src="/ngApp/images/desk.png" class="img-fluid">
-        </div>
-    </div>
-</div>
-
-<hr class="my-4">
-
-<!--- Fixed background -->
-<figure>
-    <div class="fixed-wrap">
-        <div id="fixed">
-        </div>
-    </div>
-</figure>
-
-<!--- Emoji Section -->
-<button class="fun btn-sm" data-toggle="collapse" data-target="#emoji">Connect!</button>
-
-<div id="emoji" class="collapse">
-
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="col-12 social padding">
-                <a href="https://www.facebook.com/jchleborad" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
+    <!-- Main Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img class="logo" src="/images/logos/jchleborad-logo.png" width="170">
                 </a>
-                <a href="https://www.linkedin.com/in/jchleborad/" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.instagram.com/jchleborad_/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/jchleborad_" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.strava.com/athletes/jchleborad" target="_blank">
-                    <i class="fab fa-strava"></i>
-                </a>
-                <a href="http://localhost:3001/blog" target="_blank">
-                    <img class="fa-moose" src="/ngApp/images/moose-icon.png" width="70" height="70"></img>
-                </a>
-                <!-- <div class="row text-center">
-            <div class="col-sm-6 col-md-3">
-                <img class="gif" src="/ngApp/gifs/panda.gif">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/views/resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-6 col-md-3">
-                <img class="gif" src="/ngApp/gifs/poo.gif">
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <img class="gif" src="/ngApp/gifs/unicorn.gif">
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <img class="gif" src="/ngApp/gifs/chicken.gif">
-            </div>
-        </div> -->
-            </div>
-        </div>
-    </div>
-</div>
+        </nav>
+    </header>
 
-<!--- Meet the team -->
-<div class="container-fluid padding">
-    <div class="row welcome text-center">
-        <div class="col-12">
-            <h1 class="display-4">Meet the Team</h1>
-        </div>
-        <hr>
-    </div>
-</div>
-
-<!--- Cards (Employyes) -->
-<div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="/ngApp/images/team1.png">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class='card-text'>John is an Internet entrepreneur with almost 20 years of experience</p>
-                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+    <section class="masthead center-block">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading">John Chleborad</h1>
+                        <p class="intro-text">Whatever you are, be a good one
+                            <br> – Abraham Lincoln</p>
+                        <a href="#quote" class="btn btn-circle js-scroll-trigger" style="color: whitesmoke">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="/ngApp/images/team2.png">
-                <div class="card-body">
-                    <h4 class="card-title">Mary Jo</h4>
-                    <p class='card-text'>Mary is a designer with almost 10 years of digital design experience</p>
-                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="/ngApp/images/team3.png">
-                <div class="card-body">
-                    <h4 class="card-title">Phil Ho</h4>
-                    <p class='card-text'>Phil is a developer with over 5 years of web development experience</p>
-                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <!--- Two Column Section (Our Philosophy) -->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-lg-6">
-                <h2>Our Philosophy</h2>
-                <p>We know that greatness in a disruptive era requires bold ambition, curiuos talent and a culture that believes
-                    we're smarter together.</p>
-                <p>We approach every challenge holistically, with best-in-class expertise in data, creativivity, media, technology,
-                    search, social and more. We call this Alchemy. It has the power to build our clients' brands and transform
-                    their business. And while it may seem like magic, we've got it down to a science.</p>
-                <br>
-
-            </div>
-            <div class="col-lg-6">
-                <img src="/ngApp/images/bootstrap2.png" class="img-fluid">
-            </div>
-        </div>
-        <hr class="my-4">
-    </div>
-
-    <!--- Connect (Social Media) -->
-    <div class="container-fluid padding">
-        <div class="row text-center padding">
+    <div class="container">
+        <div class="row">
             <div class="col-12">
-                <h2>Connect</h2>
-                <div class="col-12 social padding">
-                    <a href="#">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-google-plus-g"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
+                <section id="quote" class="mastheadquote" style="padding: 0px">
+                    <div class="intro-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-9 mx-auto">
+                                    <h2 class="brand-heading">In Pursuit of Change</h2>
+                                    <p class="intro-text">I believe in change, for without it there can be no progress. With change comes a feeling
+                                        of uneasiness, apprehension and an unknowing of what the future holds. But when we
+                                        embrace change, when we tackle it with all of our core, we become better. And the
+                                        world around us becomes better. Simpler.
+                                        <br>Extraordinary.</p>
+                                    <a href="#footer" class="btn btn-circle js-scroll-trigger" style="color: whitesmoke">
+                                        <i class="fa fa-angle-double-down animated"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
+
+    <!--- Footer -->
+    <footer id="footer" class="bg-dark" style="padding-top: 0px">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-8 d-none d-md-block" style="padding-top: 2px; padding-bottom: 0px">
+                    <h4 class="mt-2" style="font-size: 1.2rem">Contact John</h4>
+                    <hr class="light">
+                </div>
+                <div class="col-md-4" style="padding-top: 2px; padding-bottom: 0px">
+                    <h4 class="mt-2" style="font-size: 1.2rem">Connect</h>
+                        <hr class="light">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-8" style="padding-top: 0px; padding-bottom: 0px">
+                    <p>
+                        <a style="font-size: 1rem" href="tel:+16236965646">iPhone: (623) 696-5646</a>
+                    </p>
+                    <p>
+                        <a style="font-size: 1rem" href="mailto:jchleborad@gmail.com">jchleborad@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-md-4" style="padding-top: 0px; padding-bottom: 0px">
+                    <a href="https://www.linkedin.com/in/jchleborad" style="text-decoration: none" target="_blank">
+                        <i class="fab fa-linkedin-in mr-2" style="font-size: 1.4rem"></i>
+                    </a>
+                    <a href="https://github.com/jchleborad" style="text-decoration: none" target="_blank">
+                        <i class="fab fa-github mr-2" style="font-size: 1.4rem"></i>
+                    </a>
+                    <a href="https://www.thehackhive.com/profile/jchleborad" style="text-decoration: none" title="HackHive" target="_blank">
+                        <img class="hackhive mr-2 mb-4" src="/ngApp/images/hackhive23.png">
+                    </a>
+                    <a href="https://www.strava.com/athletes/jchleborad" style="text-decoration: none" target="_blank">
+                        <i class="fab fa-strava" style="font-size: 1.4rem"></i>
+                    </a>
+                    <!-- <a href="https://twitter.com/jchleborad_" style="text-decoration: none" target="_blank">
+            <i class="fab fa-twitter mr-2" style="font-size: 1.4rem"></i>
+          </a>
+          <a href="https://instagram.com/jchleborad_" style="text-decoration: none" target="_blank">
+            <i class="fab fa-instagram mr-2" style="font-size: 1.4rem"></i>
+          </a> -->
+                </div>
+            </div>
+        </div>
+        <hr class="light">
+        <div class="media">
+            <div class="media-left">
+                <img class="media-left ml-5 mr-2" src="/ngApp/images/logos/chleb-c-logo.png" alt="logo" width="28">
+            </div>
+            <div class="media-body text-center">
+                <span style="font-size: .6em">&copy; IV · XX · MMXVIII - R John Chleborad, all rights reserved</span>
+                <p style="font-size: .5em">jchleborad.com</p>
+                <hr class="light">
+            </div>
+            <div class="media-right">
+                <img class="media-right ml-2 mr-5" src="/ngApp/images/logos/chleb-c-logo.png" alt="logo" width="28">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
