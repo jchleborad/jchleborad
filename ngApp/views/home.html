@@ -1,13 +1,14 @@
 <!-- FROM GIT Hosted Version, Index.html -->
 <!DOCTYPE html>
+
 <body>
 
     <!-- Main Navigation -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <img class="logo" src="/images/logos/jchleborad-logo.png" width="170">
+                    <img class="logo" src="/ngApp/images/logos/chleborad-logo.png" width="170">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
@@ -43,10 +44,11 @@
         </div>
     </section>
 
-    <div class="container">
+    <!-- In Pusuit of Change -->
+    <div id="quote" class="container mb-3 mt-5">
         <div class="row">
-            <div class="col-12">
-                <section id="quote" class="mastheadquote" style="padding: 0px">
+            <div class="col-md-8">
+                <section class="mastheadquote" style="padding: 0px">
                     <div class="intro-body">
                         <div class="container">
                             <div class="row">
@@ -57,8 +59,8 @@
                                         embrace change, when we tackle it with all of our core, we become better. And the
                                         world around us becomes better. Simpler.
                                         <br>Extraordinary.</p>
-                                    <a href="#footer" class="btn btn-circle js-scroll-trigger" style="color: whitesmoke">
-                                        <i class="fa fa-angle-double-down animated"></i>
+                                    <a href="#projects" class="btn btn-circle js-scroll-trigger" style="color: whitesmoke">
+                                        <i class="fa fa-angle-double-down animated" style="color: black"></i>
                                     </a>
                                 </div>
                             </div>
@@ -66,8 +68,177 @@
                     </div>
                 </section>
             </div>
+
+            <!-- Connect With John -->
+            <div class="card my-4 text-center center-block">
+                <h6 class="card-header mb-1">Connect with Me
+                    <p class="mt-2 mb-0">
+                        <img class="img-thumbnail" src="/ngApp/images/jc-profile.png" width="100px">
+                    </p>
+                </h6>
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col-lg-6" style="padding-top: 0px; padding-bottom: 0px">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/jchleborad/" target="_blank">
+                                        <i class="fab fa-linkedin-in" style="font-size: 2rem"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/jchleborad" target="_blank">
+                                        <i class="fab fa-github" style="font-size: 2rem"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6" style="padding-top: 0px; padding-bottom: 0px">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="https://www.thehackhive.com/profile/jchleborad" target="_blank">
+                                        <img class="hackhive mb-2" src="/ngApp/images/hackhive32.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.strava.com/athletes/jchleborad" target="_blank">
+                                        <i class="fab fa-strava mt-1" style="font-size: 2rem"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Project Showcase -->
+    <div id="projects" class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="project-banner">My Projects</p>
+                <div class="project-desc">
+                    <p>These are the projects that I have created while working on my Web Developer Certification from Woz U.</p>
+                    <p>The Robot Store and the Car Dealership where developed as part of the curriculum, and include HTML5,
+                        CSS3, JavaScript and jQuery. CSS Less and Bootstrap were used in the styling of the pages.</p>
+                    <p>Create, Design, Organize was my final Project and was written using AngularJS. Bootstrap 4 is used for
+                        most of the styling</p>
+                    <p>Cindy & Me, the travel blog, is a site I began working on after completion of the course and receiving
+                        my SWD Certification. It is written using AngularJS and Bootstrap 4 to make the site responsive and
+                        friendly to mobile devices. This is an ongoing project and is in development constantly.</p>
+                    <p>Hope you enjoy!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEGIN TESTING COLLAPSIBLE PANELS -->
+    <div class="container">
+        <div class="row">
+            <!-- ROBOT STORE -->
+            <div class="col-md-6 text-center">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" style="text-align: center">
+                                <a class="robotstore" data-toggle="collapse" href="#collapse1">Robot Store</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="https://jchleborad.github.io/RobotStore/html/home.html" style="text-decoration: none" target="_blank">
+                                    <img class="project-img" src="/ngApp//images/img-logo_robotstore.png" style="height:85px; width:195px" alt="Project 1">
+                                    <br>
+                                </a>
+                            </div>
+                            <div class="panel-footer">
+                                <a class="robotstore" style="font-size: 1rem; text-decoration: none" href="https://github.com/jchleborad/RobotStore" target="_blank">View Code on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CAR DEALERSHIP -->
+            <div class="col-md-6 text-center">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" style="text-align: center">
+                                <a class="cardealership" data-toggle="collapse" href="#collapse2">Car Dealership</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="https://jchleborad.github.io/CarDealership/html/home.html" style="text-decoration: none" target="_blank">
+                                    <img class="project-img" src="/ngApp//images/img-logo_cardealership.png" style="height:85px; width:195px" alt="Project 2">
+                                    <br>
+                                </a>
+                            </div>
+                            <div class="panel-footer">
+                                <a class="cardealership" style="font-size: 1.2rem; text-decoration: none" href="https://github.com/jchleborad/CarDealership"
+                                    target="_blank">View Code on GitHub
+                                    <a/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Create, Design, Organize! -->
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" style="text-align: center">
+                                <a class="cdo" data-toggle="collapse" href="#collapse3">Create, Design, Organize!</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="" style="text-decoration: none" target="_blank">
+                                    <img class="project-img" src="/ngApp//images/img-logo_CDO.png" style="height:85px; width:195px" alt="Project 3">
+                                    <div style="font-size: .75rem">Project Site Coming Soon!</div>
+                                </a>
+                            </div>
+                            <div class="panel-footer">
+                                <a class="cdo" style="font-size: .8rem; text-decoration: none" href="https://github.com/jchleborad/CreateDesignOrganize"
+                                    target="_blank">View Code on GitHub
+                                    <a/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CINDY & ME -->
+            <div class="col-md-6 text-center">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" style="text-align: center">
+                                <a class="cindyandme" data-toggle="collapse" href="#collapse4">Cindy & Me Travel Blog</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="" style="text-decoration: none" target="_blank">
+                                    <img class="project-img" src="/ngApp//images/img-logo_cindyandme.png" style="height:85px; height:60px" alt="Project 4">
+                                    <div style="font-size: .75rem">Project Site Coming Soon!</div>
+                                </a>
+                            </div>
+                            <div class="panel-footer">
+                                <a class="cindyandme" style="font-size: 1rem; text-decoration: none" href="https://github.com/jchleborad/cindyandme" target="_blank">View Code on GitHub
+                                    <a/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- END TEST -->
 
     <!--- Footer -->
     <footer id="footer" class="bg-dark" style="padding-top: 0px">
@@ -106,12 +277,6 @@
                     <a href="https://www.strava.com/athletes/jchleborad" style="text-decoration: none" target="_blank">
                         <i class="fab fa-strava" style="font-size: 1.4rem"></i>
                     </a>
-                    <!-- <a href="https://twitter.com/jchleborad_" style="text-decoration: none" target="_blank">
-            <i class="fab fa-twitter mr-2" style="font-size: 1.4rem"></i>
-          </a>
-          <a href="https://instagram.com/jchleborad_" style="text-decoration: none" target="_blank">
-            <i class="fab fa-instagram mr-2" style="font-size: 1.4rem"></i>
-          </a> -->
                 </div>
             </div>
         </div>

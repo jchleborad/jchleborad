@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Audiowide:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash:400,500,700');
 html,
 body {
     height: 100%;
@@ -40,13 +43,14 @@ body {
 
 .mastheadquote {
     display: table;
-    width: 100%;
+    width: auto;
     height: auto;
+    border: 2px solid #a5a5a5;
+    border-radius: 8px;
     padding: 50px 0;
     text-align: center;
-    color: white;
-    background: url('/ngApp/images/bits-and-bytes.png') no-repeat bottom center scroll;
-    background-color: black;
+    color: black;
+    background: url('/ngApp/images/gettysburg-address.png') no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -112,6 +116,62 @@ footer div p {
 }
 
 /* home.html */
+
+.project-banner {
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #808080;
+    margin-bottom: 0;
+}
+
+.project-desc {
+    text-align: center;
+}
+
+.project-img {
+    border: 5px solid #ddd;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px grey;
+    margin-bottom: 1rem;
+}
+
+.project-img:hover {
+    border-radius: 15px 40px;
+}
+
+.robotstore {
+    font-family: Audiowide;
+    font-size: 1.5rem;
+    color: red;
+}
+
+.cardealership {
+    font-family: Berkshire Swash;
+    font-size: 1.6rem;
+    color: #089E6E;
+}
+
+.cdo {
+    font-family: Rock Salt;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #800080;
+}
+
+.cindyandme {
+    font-family: Comfortaa;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.technologies li {
+    display: inline;
+    color: red;
+    list-style-type: none;
+}
 
 .hr-quote-top {
     width: 50%;
@@ -189,6 +249,7 @@ footer div p {
     border-color: red;
     border-radius: .25rem;
 }
+
 .resume-padding {
     padding-left: 5rem;
 }
